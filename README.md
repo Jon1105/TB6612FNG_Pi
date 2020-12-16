@@ -4,11 +4,11 @@ Sparkfun TB6612FNG dual motor driver arduino library ported for Python on Raspbe
 ## Usage
 1. Import the class  
 ```python
-from motor import Motor
+import SparkFun_TB6612FNG as Driver
 ```
 2. Instantiate the Motor  
 ```python
-motor = Motor(in1Pin, in2Pin, pwmPin, offset, standbyPin)
+motor = Driver.Motor(in1Pin, in2Pin, pwmPin, offset, standbyPin)
 #offset is 1 or -1, used for lining up with names like forwards and backwards
 ```
 3. Drive
